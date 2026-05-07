@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Generator Codziennych Wyzwań</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-div">
+            <a class="link" href="index.html"><t class="header-links">Strona główna</t></a>
+            <a class="link" href="index.html"><t class="header-links">O nas</t></a>
+            <a class="link" href="auth.html"><t class="header-links">Logowanie / Rejestracja</t></a>
+        </div>
+    </header>
+        <!-- Login -->
+        <div id="login">
+            <h1>Logowanie</h1>
+            <input id="LoginEmail" type="email" placeholder="Adres email">
+            <input id="LoginPassword" type="password" placeholder="Hasło">
+            <button onclick="log()">Zaloguj się</button>
+            <button onclick="regShow()">Rejestracja</button>
+        </div>
+        <!-- Rejestracja -->
+        <div id="register" style="display:none;">
+            <h1>Rejestracja</h1>
+            <input id="SignupName" type="text" placeholder="Imię">
+            <input id="SignupSurname" type="text" placeholder="Nazwisko">
+            <input id="SignupEmail" type="email" placeholder="Adres email">
+            <input id="SignupPassword" type="password" placeholder="Hasło">
+            <button onclick="reg()">Zarejestruj się</button>
+            <button onclick="logShow()">Powrót</button>
+        </div>
+        <p id="message"></p>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-div">
+            <a class="link" href="index.html"><t class="footer-links">Kontakt</t></a>
+            <a class="link" href="index.html"><t class="footer-links">Polityka Prywatności</t></a>
+            <a class="link" href="index.html"><t class="footer-links">Warunki Świadczenia Usług</t></a>
+        </div>
+        <p class="credits">&copy; 2026 Gen. Inc.</p>
+  </footer>
+    <!-- Połączenie skryptu -->
+    <script src="./script.js"></script>
+</body>
+</html>

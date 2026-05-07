@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Generator Codziennych Wyzwań</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-div">
+            <a class="link" href="index.html"><t class="header-links">Strona główna</t></a>
+            <a class="link" href="index.html"><t class="header-links">O nas</t></a>
+            <a class="link" href="auth.html"><t class="header-links">Logowanie / Rejestracja</t></a>
+        </div>
+    </header>
+    <!-- Tytuł -->
+    <h1>Generator Codziennych Wyzwań</h1>
+    <!-- Przycisk losujący zadania -->
+    <button onclick="losuj()" id="losujBtn">Wylosuj wyzwanie!</button>
+    <!-- Pola tekstowe zadań i tekstu ukończenia -->
+    <p id="wyzwanie"></p>
+    <p id="tekst"></p>
+    <!-- Przyciski kończenia i historii zadań -->
+    <button onclick="ukoncz()" id="koniec" class="hidden">Ukończone</button>
+    <button onclick="hist()" id="historiaBtn" class="hidden">Pokaż historię</button>
+    <!-- Miejsce na historię zadań -->
+    <t id="historia"></t>
+    <!-- Przycisk usuwający historię -->
+    <button onclick="histClear()" id="historiaClearBtn" class="hidden">Usuń historię</button>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-div">
+            <a class="link" href="index.html"><t class="footer-links">Kontakt</t></a>
+            <a class="link" href="index.html"><t class="footer-links">Polityka Prywatności</t></a>
+            <a class="link" href="index.html"><t class="footer-links">Warunki Świadczenia Usług</t></a>
+        </div>
+        <p class="credits">&copy; 2026 Gen. Inc.</p>
+  </footer>
+    <!-- Połączenie skryptu -->
+    <script src="./script.js"></script>
+</body>
+</html>

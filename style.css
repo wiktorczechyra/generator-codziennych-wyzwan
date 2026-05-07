@@ -1,0 +1,119 @@
+body {
+    font-family: League Spartan;
+    background: #fdfdfb;
+    text-align: center;
+    padding: 1em;
+    color: #14160b;
+}
+
+h1 {
+    margin-top: 1.3em;
+    animation: fade 0.6s;
+}
+
+/* -------------- Stylizacja przycisku -------------- */
+button {
+    display: block;
+    margin: 1em auto;
+    transition-duration: 0.4s;
+    padding: 10px;
+    width: 220px;
+    border: none;
+    background: #9fac61;
+    color: #14160b;
+    border-radius: 8px;
+    cursor: pointer;
+    animation: fade 0.6s;
+}
+button:hover {
+    box-shadow: 0 0 1em rgba(20,22,11,0.6);
+    background: #b3d3ab;
+}
+
+.hidden {
+    display: none;
+}
+
+/* -------------- Zmiana szerokości dla urządzeń mobilnych -------------- */
+@media (max-width: 600px) {
+    button,
+    #wyzwanie,
+    #historia {
+        width: 90%;
+    }
+}
+
+/* -------------- Animacja fade -------------- */
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* -------------- Footer -------------- */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: linear-gradient(to right, #9fac61 , #b3d3ab);
+  color: #fdfdfb;
+  text-align: center;
+}
+
+.footer-links {
+    display: inline;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.footer-div {
+    padding: 1em;
+    padding-bottom: 0em;
+}
+
+.credits {
+    margin: 0;
+    padding: 1em;
+}
+
+/* -------------- Header -------------- */
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-image: linear-gradient(to right, #9fac61 , #b3d3ab);
+  color: #fdfdfb;
+  text-align: center;
+}
+
+.header-links {
+    display: inline;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.header-div {
+    padding: 1em;
+}
+
+.link {
+    text-decoration: none;
+    color: #fdfdfb;
+}
+
+input {
+    margin: 0.6em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fade 0.6s;
+}
+
+p {
+    animation: fade 0.6s;
+}
+
+t {
+    animation: fade 0.6s;
+}
